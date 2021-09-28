@@ -292,6 +292,7 @@ nav
 				width: 14px
 				height: 2px
 				background-color: $cause-color
+				transition: 0.3s all
 			&:after
 				content: ''
 				display: block
@@ -301,6 +302,7 @@ nav
 				height: 14px
 				width: 2px
 				background-color: $cause-color
+				transition: 0.3s all
 			&:hover
 				&:before, &:after
 					background-color: $second-color
@@ -335,3 +337,35 @@ nav
 		font-size: 17px
 		font-weight: 300
 		line-height: 24px
+
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			display: flex
+			align-items: center
+			&:before
+				content: ''
+				display: block
+				width: 21px
+				height: 20px
+				background: url('../icons/bluemark.png') center (center / cover) no-repeat
+				margin: 4px 10px 0 0
+			&:nth-child(5), &:nth-child(7)
+				display: flex
+				align-items: start
